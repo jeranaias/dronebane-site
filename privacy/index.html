@@ -39,8 +39,11 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #21262D;color:#484F
 <h3>1.4 Zone Configurations</h3>
 <p>You may create geofence zones (inclusion and exclusion zones) that define your monitored airspace. These configurations include zone names, center coordinates, radii, polygon vertices, schedule parameters, and alert preferences.</p>
 
-<h3>1.5 Usage Analytics</h3>
-<p>We collect anonymous event analytics (e.g., feature usage counts, screen views, error rates) to improve app quality. These events do not contain personally identifiable information, drone serial numbers, or location data.</p>
+<h3>1.5 Usage Analytics (PostHog)</h3>
+<p>We use PostHog (<a href="https://posthog.com">posthog.com</a>) for anonymous event analytics (e.g., feature usage counts, screen views, error rates). PostHog processes data in the United States. These events do not contain personally identifiable information, drone serial numbers, or location data. Analytics are not initialized until you consent during onboarding. You may opt out at any time via Settings > Usage Analytics.</p>
+
+<h3>1.6 Subscription Management (RevenueCat)</h3>
+<p>In-app subscriptions are managed by RevenueCat (<a href="https://www.revenuecat.com">revenuecat.com</a>). RevenueCat receives a pseudonymous user identifier and purchase transaction data from the app store. RevenueCat does not receive your name, email, or location. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
 
 <h2>2. How Data Is Stored</h2>
 <p>All detection data, zone configurations, threat history, and settings are stored locally on your device using SharedPreferences and, for sensitive subscription credentials, encrypted storage (EncryptedSharedPreferences on Android, Keychain on iOS).</p>
