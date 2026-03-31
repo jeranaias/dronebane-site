@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support - DroneBane Watch</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0D1117;color:#E6EDF3;line-height:1.8;padding:2rem;max-width:800px;margin:0 auto}
+h1{font-size:2rem;margin-bottom:0.5rem}
+h2{font-size:1.3rem;color:#1A73E8;margin-top:2rem;margin-bottom:0.5rem}
+p{margin-bottom:1rem;color:#C9D1D9}
+a{color:#1A73E8}
+.contact-box{background:#161B22;border:1px solid #30363D;border-radius:12px;padding:1.5rem;margin:1.5rem 0}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #21262D;color:#484F58;font-size:0.85rem}
+</style>
+</head>
+<body>
+
+<h1>DroneBane Support</h1>
+
+<h2>Contact</h2>
+<div class="contact-box">
+<p><strong>Email:</strong> <a href="mailto:support@thornveil.com">support@thornveil.com</a></p>
+<p><strong>Response time:</strong> Within 24 hours on business days</p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<h2>How does DroneBane detect drones?</h2>
+<p>DroneBane receives FAA-mandated Remote ID broadcasts that drones transmit via Bluetooth Low Energy (BLE). Under 14 CFR Part 89, most drones in US airspace are required to broadcast their identity, position, and operator location. DroneBane passively listens for these signals — no special hardware required.</p>
+
+<h2>Does DroneBane work indoors?</h2>
+<p>Yes. BLE signals penetrate walls and windows. Detection range may be reduced indoors compared to outdoor line-of-sight, but the app will still detect drones broadcasting within range of your phone's Bluetooth radio (typically 100-500 feet).</p>
+
+<h2>What if a drone isn't broadcasting Remote ID?</h2>
+<p>DroneBane can only detect drones that broadcast Remote ID or other BLE signals. Drones operating without Remote ID are in violation of FAA regulations. For detection of non-compliant drones, dedicated RF sensor hardware is required.</p>
+
+<h2>Does DroneBane drain my battery?</h2>
+<p>BLE scanning uses minimal power — comparable to having Bluetooth enabled for headphones. The app uses balanced scan mode and batched updates to minimize battery impact.</p>
+
+<h2>Is my data sent to the cloud?</h2>
+<p>No. In version 1.0, all detection data stays on your device. No drone data, GPS coordinates, or scan results are transmitted to any server.</p>
+
+<h2>What are the subscription tiers?</h2>
+<p><strong>Free:</strong> Full drone detection, 1 zone, 7-day history, 3 PDF reports.<br>
+<strong>Pro ($9.99/mo):</strong> Unlimited zones, 365-day history, unlimited reports, FAA filings, sensor fusion, network feed.<br>
+<strong>Enterprise ($499/mo):</strong> Command center, multi-site, API access, patrol routes, ATAK integration.</p>
+
+<footer>
+<p>&copy; 2026 Thornveil LLC. All rights reserved. <a href="/">Home</a> &middot; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
